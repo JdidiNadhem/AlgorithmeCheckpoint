@@ -10,7 +10,7 @@ REPEAT
     write("write a sentence ");
     read(sent);
 UNTIL (sent.length>0 && sent[sent.length]==".");
-FOR i FROM 0 TO sent.length STEP step  DO
+FOR i FROM 0 TO sent.length STEP 1  DO
     IF (sent[i]==" ") THEN
         nbmot:=nbmot+1;
     END_IF
