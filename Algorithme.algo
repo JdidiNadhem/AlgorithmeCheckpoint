@@ -10,8 +10,6 @@ REPEAT
     write("write a sentence ");
     read(sent);
 UNTIL (sent.length>0 && sent[sent.length]==".");
-write("The length of the sentence= ");
-write(sent.length);
 FOR i FROM 0 TO sent.length STEP step  DO
     IF (sent[i]==" ") THEN
         nbmot:=nbmot+1;
@@ -23,6 +21,8 @@ FOR i FROM 0 TO sent.length STEP step  DO
         nbvow:=nbvow+1;
     END_IF
 END_FOR
+write("The length of the sentence= ");
+write(sent.length);
 write("The number of words in the sentence= ");
 write(nbmot);
 write("The number of vowels in the sentence");
